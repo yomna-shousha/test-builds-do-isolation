@@ -28,6 +28,7 @@ export default {
 
     return Response.json({
       worker: "test-builds-do-isolation",
+      branch: "feature/second-branch",
       routes: ["/do"],
     });
   },
