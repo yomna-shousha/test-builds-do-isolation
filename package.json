@@ -2,6 +2,7 @@
   "name": "test-builds-do-isolation",
   "private": true,
   "scripts": {
+    "build": "echo 'No build step needed'",
     "deploy": "wrangler deploy",
     "preview": "wrangler preview"
   },
