@@ -1,0 +1,11 @@
+{
+  "name": "test-builds-do-isolation",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "preview": "wrangler preview"
+  },
+  "devDependencies": {
+    "wrangler": "^4.79.0"
+  }
+}
