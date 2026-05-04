@@ -1,5 +1,6 @@
 export interface Env {
   COUNTER: DurableObjectNamespace;
+  [key: string]: any;
 }
 
 export class Counter implements DurableObject {
@@ -26,8 +27,16 @@ export default {
       return stub.fetch(request);
     }
 
+    const vars: Record<string, string> = {};
+    for (const [key, value] of Object.entries(env)) {
+      if (typeof value === "string") {
+        vars[key] = value;
+      }
+    }
+
     return Response.json({
       worker: "test-builds-do-isolation",
+      vars,
       routes: ["/do"],
     });
   },

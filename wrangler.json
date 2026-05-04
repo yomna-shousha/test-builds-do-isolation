@@ -17,6 +17,9 @@
     }
   ],
   "previews": {
+    "vars": {
+      "BRANCH_VAR": "only-on-second-branch"
+    },
     "durable_objects": {
       "bindings": [
         {
