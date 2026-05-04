@@ -1,0 +1,25 @@
+wrangler.json
+  a94c17882a3b6763 20-22
+src/index.ts
+  a94c17882a3b6763 3,30-36,39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "f88e94595a51b1f772a125ef51cdbbd985264ed2",
+  "prompts": {
+    "a94c17882a3b6763": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_21b38c90cffelP8cqxJFnkNcfq",
+        "model": "anthropic/claude-opus-4-6"
+      },
+      "human_author": "yomna",
+      "messages": [],
+      "total_additions": 12,
+      "total_deletions": 1,
+      "accepted_lines": 12,
+      "overriden_lines": 0
+    }
+  }
+}
